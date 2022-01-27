@@ -1,0 +1,864 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/unera/ontologies/2022/0/merged-ontology#"
+     xml:base="http://www.semanticweb.org/unera/ontologies/2022/0/merged-ontology"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-4="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/unera/ontologies/2022/0/merged-ontology">
+        <dc:creator xml:lang="en">Hans Cools, MD, Agfa Healthcare/Belgium</dc:creator>
+        <dc:description xml:lang="en">Formal general description of genome abnormality.</dc:description>
+        <dc:format xml:lang="en">OWL Full</dc:format>
+        <dc:publisher xml:lang="en">Agfa Healthcare/Belgium</dc:publisher>
+        <dc:title xml:lang="en">Genome Abnormality</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/format -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/format"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#definition -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/event#modificationOf -->
+
+    <owl:ObjectProperty rdf:about="http://eulersharp.sourceforge.net/2003/03swap/event#modificationOf"/>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effects -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effects">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effect_full_body -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effect_full_body"/>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#weight"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/event#State -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/event#State"/>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Aneuploidy -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Aneuploidy">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">aneuploidy</rdfs:label>
+        <skos:definition xml:lang="en">Numerical chromosome abnormality.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeAbnormality -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeAbnormality">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GenomeAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome abnormality</rdfs:label>
+        <skos:definition xml:lang="en">Chromosome different from what is normal for an organism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeDeletion -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeDeletion">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#SingleChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome deletion</rdfs:label>
+        <skos:definition xml:lang="en">Loss of part of 1 chromosome.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeDuplication -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeDuplication">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#SingleChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome duplication</rdfs:label>
+        <skos:definition xml:lang="en">Duplication of part of 1 chromosome.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeInsertion -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeInsertion">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#TwoChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome insertion</rdfs:label>
+        <skos:definition xml:lang="en">Part of one chromosome inserted into another chromosome.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeInversion -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeInversion">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#SingleChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome inversion</rdfs:label>
+        <skos:definition xml:lang="en">Inversion of part of 1 chromosome.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeMutation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeMutation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome mutation</rdfs:label>
+        <skos:definition xml:lang="en">Structural chromosome abnormality.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeTranslocation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeTranslocation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#TwoChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">chromosome translocation</rdfs:label>
+        <skos:definition xml:lang="en">One part of 2 chromosomes exchanged.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GeneAbnormality -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GeneAbnormality">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GenomeAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">gene abnormality</rdfs:label>
+        <skos:definition xml:lang="en">Gene different from what is normal for an organism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GenomeAbnormality -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GenomeAbnormality">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/event#modificationOf"/>
+                <owl:someValuesFrom rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/organism#Genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">genome abnormality</rdfs:label>
+        <skos:definition xml:lang="en">Genome different from what is normal for an organism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#MonogenicMutation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#MonogenicMutation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GeneAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">monogenic mutation</rdfs:label>
+        <skos:definition xml:lang="en">One gene different from what is normal for an organism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Mutated -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Mutated">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/event#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#PolygenicMutation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#PolygenicMutation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#GeneAbnormality"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">polygenic mutation</rdfs:label>
+        <skos:definition xml:lang="en">More than one gene different from what is normal for an organism.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#SingleChromosomeMutation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#SingleChromosomeMutation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">single chromosome mutation</rdfs:label>
+        <skos:definition xml:lang="en">Structural abnormality of 1 chromosome.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#TwoChromosomeMutation -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#TwoChromosomeMutation">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#ChromosomeMutation"/>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">two chromosome mutation</rdfs:label>
+        <skos:definition xml:lang="en">Structural abnormality of 2 chromosomes.</skos:definition>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Unmutated -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Unmutated">
+        <rdfs:subClassOf rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/event#State"/>
+    </owl:Class>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/organism#Genome -->
+
+    <owl:Class rdf:about="http://eulersharp.sourceforge.net/2003/03swap/organism#Genome"/>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effects"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ"/>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Mutated -->
+
+    <owl:NamedIndividual rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Mutated">
+        <rdf:type rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/event#State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Unmutated -->
+
+    <owl:NamedIndividual rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Unmutated">
+        <rdf:type rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/event#State"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Adrenal_glands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Adrenal_glands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.12</untitled-ontology-4:weight>
+        <rdfs:label>adrenal_gland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Estrogen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Estrogen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>Estrogen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Progesterone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Progesterone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>Progesterone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Thyroid_gland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#Thyroid_gland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.35</untitled-ontology-4:weight>
+        <rdfs:label>Thyroid_gland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>adh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adrenal_glands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adrenal_glands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.12</untitled-ontology-4:weight>
+        <rdfs:label>adrenal_glands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adrenaline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#adrenaline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>adrenaline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#aldesterone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#aldesterone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>aldesterone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#all_body -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#all_body">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">70.6</untitled-ontology-4:weight>
+        <rdfs:label>all_body</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#calcitonin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#calcitonin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>calciyonin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#cortisol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#cortisol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>cortisol</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#fsh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#fsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>fsh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#glucagon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#glucagon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>glucagon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#gonads_sex_glands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#gonads_sex_glands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.23</untitled-ontology-4:weight>
+        <rdfs:label>gonads_sex_glands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#growth_hormone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#growth_hormone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>growth_hormone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hypothalamus_and_pituitary_gland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hypothalamus_and_pituitary_gland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.05</untitled-ontology-4:weight>
+        <rdfs:label>hyypothalamus_and_pituitary_gland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#insuline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#insuline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>insuline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#kidny -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#kidny">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.7</untitled-ontology-4:weight>
+        <rdfs:label>kidny</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#lh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#lh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>lh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#mammary_glands -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#mammary_glands">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</untitled-ontology-4:weight>
+        <rdfs:label>mammary_glands</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#metabolism -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#metabolism">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.0</untitled-ontology-4:weight>
+        <rdfs:label>metabolism</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#noradrenaline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#noradrenaline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>noradrenaline</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#oxytocin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#oxytocin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>oxytocin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#pancreas -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#pancreas">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.32</untitled-ontology-4:weight>
+        <rdfs:label>pancreas</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#parathormone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#parathormone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>parathormone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#parathyroid_gland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#parathyroid_gland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.2</untitled-ontology-4:weight>
+        <rdfs:label>parathyroid_gland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#sex_organs -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#sex_organs">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#affected"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.6</untitled-ontology-4:weight>
+        <rdfs:label>sex_organs</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#testosterone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#testosterone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>testosterone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#thyroid_gland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#thyroid_gland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secreting"/>
+        <untitled-ontology-4:weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.35</untitled-ontology-4:weight>
+        <rdfs:label>thyroid_gland</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#thyroxine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#thyroxine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>thyroxine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#triiodothyronine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#triiodothyronine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</untitled-ontology-4:effect_full_body>
+        <rdfs:label>triiodothyronine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#tsh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#tsh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+        <untitled-ontology-4:effect_full_body rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</untitled-ontology-4:effect_full_body>
+        <rdfs:label>tsh</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Mutated">
+        <rdfs:label xml:lang="en">mutated</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <skos:definition xml:lang="en">State of chromosome or gene being structurally changed.</skos:definition>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality#Unmutated">
+        <skos:definition xml:lang="en">State of chromosome or gene being structurally unchanged.</skos:definition>
+        <rdfs:isDefinedBy rdf:resource="http://eulersharp.sourceforge.net/2003/03swap/genomeAbnormality"/>
+        <rdfs:label xml:lang="en">unmutated</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#o">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#secrete"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#o"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#hormone"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#p"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#effects"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#p"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#o"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#organ"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/onur/ontologies/2022/0/untitled-ontology-4#o"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
